@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Czas generowania: 06 Mar 2022, 17:22
+-- Czas generowania: 06 Mar 2022, 18:39
 -- Wersja serwera: 10.4.21-MariaDB
 -- Wersja PHP: 8.1.2
 
@@ -81,7 +81,7 @@ INSERT INTO `products` (`id_pruduct`, `name`, `descriptions`, `price`, `date_add
 CREATE TABLE `suppliers` (
   `id_supplier` int(11) NOT NULL,
   `id_product` int(11) NOT NULL,
-  `supplier_name` varchar(20) COLLATE utf8mb4_polish_ci NOT NULL,
+  `name` varchar(20) COLLATE utf8mb4_polish_ci NOT NULL,
   `phone_number` varchar(20) COLLATE utf8mb4_polish_ci NOT NULL,
   `e_mail` varchar(20) COLLATE utf8mb4_polish_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_polish_ci;
@@ -90,7 +90,7 @@ CREATE TABLE `suppliers` (
 -- Zrzut danych tabeli `suppliers`
 --
 
-INSERT INTO `suppliers` (`id_supplier`, `id_product`, `supplier_name`, `phone_number`, `e_mail`) VALUES
+INSERT INTO `suppliers` (`id_supplier`, `id_product`, `name`, `phone_number`, `e_mail`) VALUES
 (1, 6, 'Apple', '1–800–854–3680.', 'apple@apple.com'),
 (2, 7, 'HP', '1–800–854–3680.', 'hp@hp.pl'),
 (3, 2, 'Panasonic', '+58PANASONIC', 'info@panasonic.fi'),
